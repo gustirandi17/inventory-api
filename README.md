@@ -11,7 +11,7 @@ API backend untuk manajemen inventaris yang dibangun menggunakan Golang dengan f
    - Setelah MySQL terinstal, buat database untuk proyek ini.
    
    ```sql
-   CREATE DATABASE inventory_api;
+   CREATE DATABASE inventory-app;
 
 3. **Setup Database**
    - Sesuaikan konfigurasi database kamu di file `.env`
