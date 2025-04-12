@@ -7,20 +7,14 @@ API backend untuk manajemen inventaris yang dibangun menggunakan Golang dengan f
 1. **Instalasi MySQL:**
    - Pastikan MySQL sudah terinstal di komputer kamu. Kamu bisa mengunduh MySQL dari [situs resmi MySQL](https://dev.mysql.com/downloads/installer/).
    
-2. **Buat Database:**
-   - Setelah MySQL terinstal, buat database untuk proyek ini.
-   
-   ```sql
-   CREATE DATABASE inventory-app;
-
-3. **Setup Database**
+2. **Setup Database**
+   - Buat database
    - Sesuaikan konfigurasi database kamu di file `.env`
   
-4. **Menjalankan Project**
+3. **Menjalankan Project**
    - Pastikan kamu sudah install semua dependecy yang digunakan di proyek. bisa menggunakan perintah "go mod tidy"
    - Jalankan aplikasi menggunakan `go run main.go`
    - API akan berjalan di http://localhost:8080
 
-
-5. **DOKUMENTASI API**
+4. **DOKUMENTASI API**
    - Untuk dokumentasi lebih lanjut, kamu bisa mengakses dokumentasi API secara online di (https://documenter.getpostman.com/view/40938878/2sB2cYeLxw)
