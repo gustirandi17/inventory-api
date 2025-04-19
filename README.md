@@ -41,15 +41,8 @@ API backend untuk manajemen inventaris yang dibangun menggunakan Golang dengan f
 ```
 
 
-## 📤 Download Gambar Produk
+## 📥 Download Gambar Produk
 
 - **Endpoint:** `GET /download/:product_id`
 - **Deskripsi:** Mengunduh gambar produk berdasarkan ID.
 - **Response:** File gambar
-
-```json
-{
-  "message": "File berhasil diupload",
-  "filename": "1.jpg",
-  "image_url": "/uploads/1.jpg"
-}
