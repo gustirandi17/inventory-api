@@ -38,6 +38,8 @@ API backend untuk manajemen inventaris yang dibangun menggunakan Golang dengan f
   "filename": "1.jpg",
   "image_url": "/uploads/1.jpg"
 }
+```
+
 
 ## 📤 Download Gambar Produk
 
