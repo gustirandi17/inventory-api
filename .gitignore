@@ -1,0 +1,19 @@
+# Folder upload gambar
+uploads/
+
+# Log file
+*.log
+
+# Konfigurasi lokal
+.env
+
+# Cache / build
+*.exe
+*.out
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

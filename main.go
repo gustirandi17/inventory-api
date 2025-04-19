@@ -14,7 +14,8 @@ func main() {
 	routes.ProductRoutes(r)
 	routes.InventoryRoutes(r)
 	routes.OrderRoutes(r)
-	routes.UploadRoutes(r)
+	routes.FileRoutes(r)
+
 
 	r.Static("/uploads", "./uploads")
 

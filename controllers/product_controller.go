@@ -2,11 +2,9 @@ package controllers
 
 import (
 	"net/http"
-	// "strconv"
-
-	"github.com/gin-gonic/gin"
 	"inventory-api/config"
 	"inventory-api/models"
+	"github.com/gin-gonic/gin"
 )
 
 // Create product
@@ -38,12 +36,12 @@ func GetProductByID(c *gin.Context) {
 	c.JSON(http.StatusOK, product)
 }
 
-// Update product
+//Update product
 func UpdateProduct(c *gin.Context) {
 	id := c.Param("id")
 	var product models.Product
 	if err := config.DB.First(&product, id).Error; err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"error": "Product not found"})
+		c.JSON(http.StatusNotFound, gin.H{"error": "Product tidak ditemukan"})
 		return
 	}
 
@@ -63,14 +61,15 @@ func UpdateProduct(c *gin.Context) {
 	c.JSON(http.StatusOK, product)
 }
 
+
 // Delete product
 func DeleteProduct(c *gin.Context) {
 	id := c.Param("id")
 	var product models.Product
 	if err := config.DB.First(&product, id).Error; err != nil {
-		c.JSON(http.StatusNotFound, gin.H{"error": "Product not found"})
+		c.JSON(http.StatusNotFound, gin.H{"error": "Product tidak ditemukan"})
 		return
 	}
 	config.DB.Delete(&product)
-	c.JSON(http.StatusOK, gin.H{"message": "Product deleted"})
+	c.JSON(http.StatusOK, gin.H{"message": "Product dihapus"})
 }

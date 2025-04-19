@@ -18,3 +18,36 @@ API backend untuk manajemen inventaris yang dibangun menggunakan Golang dengan f
 
 4. **DOKUMENTASI API**
    - Untuk dokumentasi lebih lanjut, kamu bisa mengakses dokumentasi API secara online di (https://documenter.getpostman.com/view/40938878/2sB2cYeLxw)
+
+
+## 📤 Upload Gambar Produk
+
+- **Endpoint:** `POST /upload/:product_id`
+- **Deskripsi:** Mengunggah gambar produk berdasarkan ID.
+- **Request:**
+  - Form Data:
+    - Key: `image` (type: File)
+- **Validasi:**
+  - Format: `.jpg`, `.jpeg`, `.png`
+  - Maks ukuran: 2MB
+- **Response (200):**
+
+```json
+{
+  "message": "File berhasil diupload",
+  "filename": "1.jpg",
+  "image_url": "/uploads/1.jpg"
+}
+
+## 📤 Download Gambar Produk
+
+- **Endpoint:** `GET /download/:product_id`
+- **Deskripsi:** Mengunduh gambar produk berdasarkan ID.
+- **Response:** File gambar
+
+```json
+{
+  "message": "File berhasil diupload",
+  "filename": "1.jpg",
+  "image_url": "/uploads/1.jpg"
+}
